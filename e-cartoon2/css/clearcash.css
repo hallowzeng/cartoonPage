@@ -1,0 +1,24 @@
+.right_con_deposit{
+	height: 600px;
+	width: 100%;
+	
+}
+.clear_know{
+	height: 550px;
+	width: 100%;
+}
+.clear_text{
+	height: 100px;
+	width: 100%;
+	
+}
+.clear_text input{
+	height: 30px;
+	width: 60px;
+	border-radius: 4px;
+	cursor: pointer;
+	background-color: #1E90FF;
+	color: #FFFFFF;
+	margin: 30px 400px;
+	
+}

@@ -1,0 +1,40 @@
+/*公共样式*/
+ul{
+	list-style: none;
+}
+a,ul,dl,dt,dd,p{
+	margin: 0;
+	padding: 0;
+	font-size: 12px;
+}
+input{
+	border: 0;
+}
+
+input:focus{
+	outline: none;
+}
+a{  
+	display:inline-block;
+	text-decoration: none;
+	color: #666;
+}
+a:hover{
+	color: #fe9900;
+}
+/*版心*/
+.w{
+	width: 1250px;
+	margin: 0 auto;
+}
+/*ico图标样式*/
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?9n6zz0');
+  src:  url('../fonts/icomoon.eot?9n6zz0#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?9n6zz0') format('truetype'),
+    url('../fonts/icomoon.woff?9n6zz0') format('woff'),
+    url('../fonts/icomoon.svg?9n6zz0#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

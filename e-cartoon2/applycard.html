@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>开卡</title>
+		<link rel="shortcut icon" href="favicon.ico" />
+		<!--初始化-->
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<!--基础公共样式-->
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<link rel="stylesheet" type="text/css" href="css/publice.css" />
+		<script src="js/jquery-easyui-1.6.6/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		
+		<!--开卡样式-->
+		<link rel="stylesheet" type="text/css" href="css/applycard.css" />
+		<!--easyui框架-->
+		<script src="js/jquery-easyui-1.6.6/jquery.easyui.min.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="js/jquery-easyui-1.6.6/themes/icon.css" />
+		<link rel="stylesheet" type="text/css" href="js/jquery-easyui-1.6.6/themes/default/easyui.css" />
+		<script src="js/jquery-easyui-1.6.6/locale/easyui-lang-zh_CN.js" type="text/javascript" charset="utf-8"></script>
+
+		<!--进度条样式-->
+		<link rel="stylesheet" type="text/css" href="css/orstyle.css" />
+        <script src="js/applycard.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<header>
+			<div class="w">
+				<!--头左-->
+				<div class="header_left">
+					<ul>
+						<li>
+							<a href="#">登录</a>
+						</li>
+						<li>
+							<a href="#">注册</a>
+						</li>
+					</ul>
+				</div>
+				<!--头右-->
+				<div class="header_right">
+					<div class="input_div">
+						<i></i>
+						<input type="text" name="" id="" value="" />
+						<label for=""><a href="#">搜索</a></label>
+					</div>
+
+				</div>
+			</div>
+		</header>
+		<!--导航栏开始-->
+		<div class="headerbg">
+			<div class="ww">
+				<div class="header_logo">
+					<div class="logo_name"></div>
+				</div>
+				<div class="nav">
+					<ul>
+						<li>
+							<a href="#"><i></i>&nbsp;首页</a>
+						</li>
+						<li>
+							<a href="#">卡务管理</a>
+						</li>
+						<li>
+							<a href="#">账务管理</a>
+						</li>
+						<li>
+							<a href="#">结算管理</a>
+						</li>
+						<li>
+							<a href="#">基本信息</a>
+						</li>
+						<li>
+							<a href="#">系统用户</a>
+
+						</li>
+						<li>
+							<a href="#">服务大厅</a>
+							<div class="nav_con">
+
+								<ul>
+									<li>
+										<a href="http://wpa.qq.com/msgrd?v=3&uin=2904133050&site=qq&menu=yes">人工服务</a>
+									</li>
+									<li>
+										<a href="help.html">帮助</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!--导航栏结束-->
+		<!--主体部分开始-->
+		<div id="e_body">
+			<!--左导航开始-->
+			<div class="e_leftnav">
+				<div id="">
+					<ul>
+						<li>
+							<a class="e_icon" id="deposit" href="#">开卡</a>
+						</li>
+						<li>
+							<a class="e_icon" id="batch_deposit" href="#">销卡</a>
+						</li>
+					</ul>
+				</div>
+				<div class="customer_service">
+					<div class="c_s_title">
+						<h4 style="color: #0261BF; width: 130px;border-top: 2px solid #0e559f; background-color: white; font-size: 15px;"><i></i>联系客服</h4>
+					</div>
+					<div class="cantact">
+						<img src="img/contact.jpg" />
+						<h2 style="display:inline-block;text-align: center;margin: 8px 40px;">校园e卡通</h2>
+						<p style="display:inline-block;text-align: center;margin: 5px 0px;">电话：0132-12313233</p>
+						<p style="display:inline-block;text-align: center;margin: 5px 0px;">地址：湖南 长沙 湖南科技职业学院</p>
+					</div>
+				</div>
+			</div>
+			<!--左导航结束-->
+			<!--右内容开始-->
+			<div class="e_rightcon">
+				<div class="right_title">
+					<h2><a href="#"><i></i>E卡通</a></h2>
+				</div>
+				<!--	开卡开始-->
+				<div class="right_con_deposit" style="display: none;">
+					<!--进度条-->
+					<div class="m-progress">
+						<div class="m-progress-list">
+							<span class="step-1 step">
+                                   <em class="u-progress-stage-bg"></em>
+                                   <i class="u-stage-icon-inner">1<em class="bg"></em></i>
+                                   <p class="stage-name">开卡须知</p>
+                                </span>
+							<span class="step-2 step">
+                                   <em class="u-progress-stage-bg"></em>
+                                   <i class="u-stage-icon-inner">2<em id="em_1"></em></i>
+                                   <p class="stage-name">信息查找</p>
+                                </span>
+							<span class="step-3 step">
+                                   <em class="u-progress-stage-bg"></em>
+                                   <i class="u-stage-icon-inner">3<em id="em_2"></em></i>
+                                   <p class="stage-name">信息填写</p>
+                                </span>
+							<span class="step-4 step">
+                                   <em class="u-progress-stage-bg"></em>
+                                   <i class="u-stage-icon-inner">4<em id="em_3"></em></i>
+                                   <p class="stage-name">开卡完成</p>
+                                </span>
+							<span class="u-progress-placeholder"></span>
+						</div>
+						<div class="u-progress-bar total-steps-2">
+							<div class="u-progress-bar-inner"></div>
+						</div>
+					</div>
+					<!--进度条-->
+
+					<div id="tiaozhuan_01" class="apply_know" style="display: block;">
+
+						<form action="" method="post">
+							<div class="apply_know_text">
+								<div class="apply_know_title">校园e卡通申请须知</div>
+								<div class="apply_know_content">
+									1.如不慎丢失校园卡，可自助在圈存机上办理挂失或拨打语音电话：***7620办理，亦可携带本人身份证到事务中心办理挂失手续。(初始密码为身份证末六位，如遇X改为0)
+									</br>
+									2.找回丢失校园卡时需带上本人身份证至事务中心卡务窗口办理解挂。
+									</br>
+									3.如是人为损坏或丢失校园卡，补办卡时需交付25元的工本费。 （校园卡若丢失则e通卡账户的余额无法找回。）
+									</br>
+									4.若卡损坏或出现故障无法正常使用时，补办完新卡后可携带新卡和旧卡至易通卡客服办理公交余额的转账。
+									</br>
+									5. 在重办前请各位同学仔细查找，校园卡补办完后若找到丢失的卡，则旧的校园卡已作废。
+									</br>
+									6.补办完新的校园卡后，旧卡里面的余额必须在补办完卡的三天（即72小时）后，拿新的校园卡至事务中心办理余额转账业务。（注：新卡消费密码回到初始密码即身份证后六位，需自己另行更改。）
+									</br>
+									7.校园卡补办后新卡上的E通卡功能没有学生优惠，需自己携带身份证、学生证和校园卡至客服办理。
+									</br>
+									8.e通卡的使用请遵守《科院E通卡章程》及湖南科技职业学院《校园一卡通管理办法》有关规定。
+								</div>
+								<div class="apply_bottom">
+									<input id="btn_1" class="apply_bottom_btn" type="button" value="下一步" />
+								</div>
+							</div>
+						</form>
+					</div>
+
+					<div id="tiaozhuan_02" class="identify_text" style="display: none;">
+						<form action="" method="post">
+							<div class="identify_text_01">
+								&nbsp;&nbsp;姓名：<input id="identify_user" type="text" name="user" placeholder="请输入姓名 " /> 学号：
+								<input id="identify_number" type="text" name="number" placeholder="请输入学号 " />
+								<input id="identify_search" type="button" value="查找 " name="search" />
+							</div>
+							<div class="identify_text_02">
+								<table id="dg" class="easyui-datagrid" title="信息表" style="width:100%;height:300px" data-options="rownumbers:true,singleSelect:true,url:'datagrid_applycard.json',method: 'post',autoRowHeight:false,pagination:true,pageSize:10">
+									<thead>
+										<tr>
+											<!--<th data-options="field:'ck',checkbox:true"></th>-->
+											<th data-options="field:'real_name',width:50,align:'center'">姓名</th>
+											<th data-options="field:'number',width:150,align:'center'">学号</th>
+											<th data-options="field:'telephone',width:120,align:'center'">电话</th>
+											<th data-options="field:'classes_id',width:50,align:'center'">班级</th>
+											<th data-options="field:'id_card',width:180,align:'center'">身份证号码</th>
+											<th data-options="field:'e_card_id',width:150,align:'center'">卡号id</th>
+										</tr>
+									</thead>
+								</table>
+
+							</div>
+							<div class="apply_bottom">
+								<input id="btn_return_2" class="apply_bottom_btn" type="button" value="上一步" />
+								<input id="btn_2" class="apply_bottom_btn3" type="button" value="下一步 " onclick="findMaxId()" />
+							</div>
+						</form>
+					</div>
+
+					<div id="tiaozhuan_03" class="info_text" style="display:none;">
+						<form id="clearinfo" action="" method="post">
+							<div class="info_text_form">
+								卡号：<input id="info_text_number" type="text" name="card_number" placeholder="请输入卡号 " /><br/> 金额：
+								<input id="info_text_cash" type="text" name="cash" placeholder="请输入存现金额 " /><br/> 日期：
+								<input id="info_text_date" type="datetime" name="date" placeholder="请选择日期时间 " />
+							</div>
+
+							<div class="apply_bottom">
+                                <input id="btn_return_3" class="apply_bottom_btn" type="button" value="上一步" />
+								<input class="apply_bottom_btn2" type="button" value="取消 " onclick="clearInfo()" />
+								<input id="btn_3" class="apply_bottom_btn3" type="button" value="下一步 " />
+							
+
+							</div>
+						</form>
+					</div>
+					<div id="tiaozhuan_04" class="identify_success" style="display: none;">
+						<div class="identify_success_text">
+							<span class="identify_success_img"><img src="img/timg.gif" style="width:300px;height:300px;"></span>
+							<span class="identify_success_content">恭喜您，开卡成功！</span>
+						</div>
+					</div>
+				</div>
+				<!--开卡结束-->
+
+				<!--销卡开始-->
+				<div class="right_batch_deposit" style="display: none; ">
+					<div class="destroy_text" style="display: block;>
+							<form action="" method="post">
+								<div class="destroy_text_01">
+									&nbsp;&nbsp;姓名：<input id="destroy_user" type="text" name="user" placeholder="请输入姓名 " /> 学号：
+									<input id="destroy_number" type="text" name="number" placeholder="请输入学号 " />
+									<input id="destroy_search" type="button" value="查找 " name="search" />
+								</div>
+					        <div class="destroy_text_02 ">
+	<table id="dg_2" title="学生信息表 " class="easyui-datagrid" style="width:100%;height:300px" data-options="rownumbers:true,singleSelect:true,url: 'datagrid_destroycard.json',method: 'get',autoRowHeight:false,pagination:true,pageSize:10 ">
+		<thead>
+			<tr>
+				<!--<th data-options="field: 'ck',checkbox:true "></th>-->
+				<th data-options="field: 'real_name',width:50,align: 'center' ">姓名</th>
+				<th data-options="field: 'number',width:150,align: 'center' ">学号</th>
+				<th data-options="field: 'telephone',width:120,align: 'center' ">电话</th>
+				<th data-options="field: 'classes_id',width:50,align: 'center' ">班级</th>
+				<th data-options="field: 'id_card',width:180,align: 'center' ">身份证号码</th>
+				<th data-options="field: 'e_card_id',width:150,align: 'center' ">卡号</th>
+			</tr>
+		</thead>
+	</table>
+		
+								</div>
+								<div class="apply_bottom ">
+			<input class="apply_bottom_btn " type="button" value="下一步 " onclick="$( '#destroy').dialog( 'open') " />
+	</div>
+							</form>
+						</div>
+				</div>
+				
+				<!--	销卡结束-->
+
+			</div>
+			<!--右内容结束-->
+		</div>
+		<!--主体部分结束-->
+		<!--修改-->
+		<div id="destroy" class="easyui-dialog" title="销卡" style="width: 550px;height: 500px; "
+			data-options="collapsible:false,modal:true,closed:true" >
+		<div style="padding:50px 60px 20px 60px ">
+	    <form id="ff" class="easyui-form" method="post" data-options="novalidate:true">
+	    	<table cellpadding="5">
+	    		<tr>
+	    			<td>姓名:</td>
+	    			<td><input class="easyui-textbox" type="text" name="real_name" data-options="required:true" style="width: 300px;"></input></td>
+	    		</tr>
+	    		<tr>
+	    			<td>学号:</td>
+	    			<td><input class="easyui-textbox" type="text" name="number" data-options="required:true" style="width: 300px;"></input></td>
+	    		</tr>
+	    		<tr>
+	    			<td>卡号:</td>
+	    			<td><input class="easyui-textbox" type="text" name="card_number" data-options="required:true" style="width: 300px;"></input></td>
+	    		</tr>
+	    		<tr>
+	    			<td>余额:</td>
+	    			<td><input class="easyui-textbox" type="text" name="cash" data-options="required:true" style="width: 300px;"></input></td>
+	    		</tr>
+	    		
+	    	</table>
+	    </form>
+	    <div style="padding:5px;margin: 20px 60px;">
+	    	<a href="javascript:void(0)" iconCls="icon-ok" class="easyui-linkbutton" onclick="submitForm()">确定</a>&nbsp;&nbsp;
+	    	<a href="javascript:void(0)" iconCls="icon-no" class="easyui-linkbutton" onclick="clearForm()">清空</a>
+	    </div>
+	    
+	    </div>	
+		</div>
+	</body>
+
+</html>

@@ -1,0 +1,354 @@
+.right_con_deposit{
+	height: auto;
+	width: 100%;
+	
+}
+#deposit_form{
+	width: 400px;
+	height: auto;
+	margin: 0 auto;
+}
+.deposit_input{
+
+	height: 40px;
+	line-height: 40px;
+	width: 320px;
+	
+}
+.batch_deposit_input{
+	height: auto;
+	width: 320px;
+}
+.batch_deposit_input i{
+	text-align: center;
+	margin-top:6px ;
+	display:block;
+	float: left;
+	font-style: normal;
+	font-weight: 500;
+	font-family: "icomoon";
+	font-size: 16px;
+	height: 27px;
+	line-height: 27px;
+	width: 30px;
+	border: 1px solid #eee;
+	border-right: 0px;
+	cursor: pointer;
+}
+.batch_deposit_input input{
+	margin-top:6px ;
+	float: left;
+	height: 25px;
+	width: 140px;
+	border: 1px solid #eee;
+}
+.deposit_input_one{
+	height: 40px;
+	line-height: 40px;
+	width: 320px;
+}
+.deposit_input i{
+	text-align: center;
+	margin-top:6px ;
+	display:block;
+	float: left;
+	font-style: normal;
+	font-weight: 500;
+	font-family: "icomoon";
+	font-size: 16px;
+	height: 27px;
+	line-height: 27px;
+	width: 30px;
+	border: 1px solid #eee;
+	border-right: 0px;
+	cursor: pointer;
+}
+#depsit_i{
+	text-align: center;
+	margin-top:6px ;
+	display:inline-block;
+	font-style: normal;
+	font-weight: 500;
+	
+	font-family: "icomoon";
+	font-size: 16px;
+	height: 27px;
+	line-height: 27px;
+	width: 30px;
+	border: 1px solid #eee;
+	cursor: pointer;
+}
+#depsit_i:hover{
+	color:#1E90FF ;
+}
+.deposit_input input{
+	margin-top:6px ;
+	float: left;
+	height: 25px;
+	width: 140px;
+	border: 1px solid #eee;
+	border-left: 0px;
+	border-right: 0px;
+}
+.deposit_input input:focus{
+	
+}
+.deposit_message{
+	margin-top: 10px;
+	height: 200px;
+	width: 100%;
+	text-align: center;
+	
+	border: 1px solid #eee;
+}
+.deposit_input label{
+	display:inline-block;
+	text-align: center;
+	margin-top:6px;
+	margin-right: 20px;
+	float: left;
+	height: 27px;
+	line-height: 27px;
+	width: 40px;
+	border: 1px solid #eee;
+	
+}
+.deposit_input label:hover{
+	background-color: #1E90FF;
+}
+.deposit_input label:hover a{
+	color: white;
+}
+.deposit_input label a{
+	color: black;
+}
+.deposit_cash{
+	width: 100%;
+	height: 30px;
+	margin: 10px 0px;
+}
+.deposit_cash input{
+	border: 1px solid #eee;
+	height: 25px;
+}
+.deposit_cash select{
+	width: 200px;
+}
+#deposit_submit{
+	height: 30px;
+	width: 60px;
+	border-radius: 4px;
+	margin: 0 auto;
+	background-color: #1E90FF;
+	display: block;
+	color: white;
+}
+#deposit_submit:hover{
+	cursor: pointer;
+}
+
+.apply_know{
+	height: 550px;
+	width: 100%;
+}
+.apply_know_text{
+	height: 430px;
+	width: 700px;
+	font-size: 16px;
+	line-height: 26px;
+	padding-top: 30px;
+	position: relative;
+	left: 70px;
+}
+.apply_know_title{
+	height: 50px;
+	width: 100%;
+	text-align: center;
+	font-size: 18px;
+	padding-top: 10px;
+}
+.apply_know_content{
+	height: 350px;
+	width: 100%;
+	text-align: left;
+	font-size: 14px;
+	line-height: 36px;
+	padding-bottom: 20px;
+}
+.apply_bottom{
+	height: 50px;
+	width: 700px;
+    
+}
+.apply_bottom_btn{
+	height: 30px;
+	width: 80px;
+	border-radius: 4px;
+	cursor: pointer;
+	margin-top: 10px;
+	margin-left: 200px;
+	background-color: #1E90FF;
+	color: white;
+}
+.apply_bottom_btn2{
+	height: 30px;
+	width: 80px;
+	border-radius: 4px;
+	cursor: pointer;
+	margin-top: 10px;
+	margin-left: 20px;
+	background-color: #1E90FF;
+	color: white;
+}
+.apply_bottom_btn3{
+	height: 30px;
+	width: 80px;
+	border-radius: 4px;
+	cursor: pointer;
+	margin: 10px 20px;
+	background-color: #1E90FF;
+	color: white;
+}
+.identify_text{
+	height: 500px;
+	width: 100%;
+}
+.identify_text_01{
+	height: 100px;
+	width: 820px;
+	display: block;
+	position: relative;
+	left: 10px;
+	top: 10px;
+
+}
+#identify_user{
+	margin: 20px 20px;
+	height: 30px;
+	width: 150px;
+	border: 1px solid darkgray;
+}
+#identify_number{
+	margin: 20px 20px;
+	height: 30px;
+	width: 150px;
+	border: 1px solid darkgray;
+}
+#identify_search{
+	height: 30px;
+	width: 60px;
+	border-radius: 4px;
+	cursor: pointer;
+	margin: 20px auto;
+	background-color: #1E90FF;
+	color: white;
+}
+.identify_text_02{
+	height: 350px;
+	width: 820px;
+	display: block;
+	position: relative;
+	left: 10px;
+	
+}
+.info_text{
+	height: 500px;
+	width: 100%;
+	
+}
+.info_text_form{
+	height: 300px;
+	width: 400px;
+	margin: 80px 100px 10px 100px;
+	
+}
+#info_text_number{
+	margin: 20px 20px;
+	height: 30px;
+	width: 300px;
+	border: 1px solid darkgray;
+}
+#info_text_cash{
+	margin: 20px 20px;
+	height: 30px;
+	width: 300px;
+	border: 1px solid darkgray;
+}
+#info_text_date{
+	margin: 20px 20px;
+	height: 30px;
+	width: 300px;
+	border: 1px solid darkgray;
+}
+.identify_success{
+	height: 500px;
+	width: 100%;
+	
+}
+.identify_success_text{
+	height: 300px;
+	width: 700px;
+	margin: 100px 100px;
+	
+}
+.identify_success_img{
+	height: 240px;
+	width: 300px;
+	margin-top: 30px;
+	float: left;
+	
+}
+.identify_success_content{
+	height: 50px;
+	width: 400px;
+    position: relative;
+    top: 180px;
+    left: -50px;
+    display: inline;
+	font-size: 26px;
+	color: #FDAF5F;
+	
+}
+
+.destroy_text{
+	height: 500px;
+	width: 100%;
+}
+.destroy_text_01{
+	height: 100px;
+	width: 820px;
+	display: block;
+	position: relative;
+	left: 10px;
+	top: 10px;
+
+}
+#destroy_user{
+	margin: 20px 20px;
+	height: 30px;
+	width: 150px;
+	border: 1px solid darkgray;
+}
+#destroy_number{
+	margin: 20px 20px;
+	height: 30px;
+	width: 150px;
+	border: 1px solid darkgray;
+}
+#destroy_search{
+	height: 30px;
+	width: 60px;
+	border-radius: 4px;
+	cursor: pointer;
+	margin: 20px auto;
+	background-color: #1E90FF;
+	color: white;
+}
+.destroy_text_02{
+	height: 350px;
+	width: 820px;
+	display: block;
+	position: relative;
+	left: 10px;
+	
+}

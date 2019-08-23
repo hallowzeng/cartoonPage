@@ -1,0 +1,137 @@
+/*主体部分样式*/
+#e_body{
+	width: 1080px;
+	margin: 0 auto;
+}
+/*左导航*/
+.e_leftnav{
+	float: left;
+	width: 230px;
+	height: auto;
+}
+.e_leftnav ul{
+	width: 230px;
+}
+.e_leftnav ul li{
+	width: 230px;
+	height: 50px;
+	margin-bottom: 10px;
+	text-align: center;
+	line-height: 50px;
+	margin-left: ;
+	background-color: #eeeeee;
+}
+
+.e_leftnav ul a:active{
+	background-color: dodgerblue;
+}
+.e_leftnav ul li:hover{
+	background-color: dodgerblue;
+}
+
+.e_leftnav ul li:hover a{
+	color: white;
+}
+.e_leftnav_a{
+	background-color: dodgerblue;
+	color: white;
+}
+.e_leftnav_a1{
+
+	background-color: #eeeeee;
+}
+.e_leftnav li a{
+	width: 230px;
+	font-size: 16px;
+	height: 50px;
+	color: black;
+}
+.e_icon{
+	background: url(../img/iconchannle.png) 20px center no-repeat;
+	color: white;
+}
+.e_leftnav li a.e_icon:hover{
+	background: url(../img/iconchannle_hover.png) 20px center no-repeat;
+	color: white;
+}
+.customer_service{
+	height: 430px;
+	width:228px;
+	border: 1px solid #DEDEDE;
+    overflow: hidden;
+}
+.c_s_title{
+	height: 42px;
+	width: 100%;
+	text-align: center;
+	line-height: 42px;
+	background-color: #EEEEEE;
+}
+.c_s_title:hover{
+	cursor: pointer;
+}
+.c_s_title i{
+	font-style: normal;
+	font-weight: normal;
+	font-family: "icomoon";
+	margin-right: 10px;
+}
+.cantact{
+	padding: 10px;
+}
+/*右内容*/
+.e_rightcon{
+	float: right;
+	width: 840px;
+	height: auto;
+    border: 1px solid #DEDEDE;
+   overflow: hidden;
+}
+
+
+.right_title{
+    height: 40px;
+    line-height: 40px;
+    background: #EEEEEE;
+}
+.right_title h2{
+	display: inline-block;
+	border-top: 2px solid #0e559f;
+	width: 160px;
+	background-color: white;
+}
+.right_title h2 a{
+    padding-left: 45px;
+    color: #0261BF;
+    font-size: 15px;
+}
+.right_title h2 i{
+	font-style: normal;
+	font-weight: normal;
+	font-family: "icomoon";
+	margin-right: 5px;
+}
+.right_con h1{
+	display: inline-block;
+	text-align: center;
+	height: 50px;
+	line-height: 50px;
+	width: 100%;
+} 
+.right_con h6{
+	display: inline-block;
+	height: 30px;
+	line-height: 30px;
+	width: 100%;
+} 
+.con_cen{
+  padding: 10px 20px;
+}
+.right_con p{
+	text-indent:25px;
+	display: inline-block;
+	height: 30px;
+	font-size: 14px;
+	line-height: 30px;
+	
+} 
